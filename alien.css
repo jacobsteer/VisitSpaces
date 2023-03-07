@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background: #2A106A
+}
+
+.box1{
+	background-color: lavender;
+	width: 800px;
+	height: 100px;
+	position: relative;
+	left: 325px;
+	font-size: 75px;
+	text-align: center;
+	font-family: "Helvetica Neue";
+}
+
+.box2{
+	background-color: darkgray;
+	width: 800px;
+	height: 100px;
+	position: relative;
+	left: 325px;
+	font-size:15px;
+	text-align: left;
+	font-family: "Helvetica Neue";
+}
