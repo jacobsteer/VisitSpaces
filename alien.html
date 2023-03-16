@@ -2,19 +2,112 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Untitled Document</title>
+<title>Alien Invasion</title>
 <link href="stylesheet.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.typekit.net/qwg0xdt.css">
+	<link rel="icon" href="earthicon.png">
 </head>
 
 <body>
+
+<div class="alienbox1">Oh No!</div>
+<div class="alienbox2">You've fallen into the alien wormhole!<br> Now you need to join the alien side. <br> Enjoy creating your alien self!</div>
+<div class="alienbg"><img src="ALIENFINALBGV2.png" height="" width="100%" alt="space" float="center"></div>
+<div class="alienguy"><a href="Index.html"><img src="alienguyv1.png" height="" width="350px" alt="space" float="center"></a></div>
+
+    <div class="slideshow-container">
+      <div class="mySlides1">
+        <img src="alientopv6.png" style="width:100%">
+      </div>
+      <div class="mySlides1">
+        <img src="alientopv2.png" style="width:100%">
+      </div>
+      <div class="mySlides1">
+        <img src="alientopv3.png" style="width:100%">
+      </div>
+		<div class="mySlides1">
+        <img src="alientopv4.png" style="width:100%">
+      </div>
+		<div class="mySlides1">
+        <img src="alientopv5.png" style="width:100%">
+      </div>
+		<div class="mySlides1">
+        <img src="alientopv1.png" style="width:100%">
+      </div>
+      <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    </div>
+
+    <div class="slideshow-container">
+      <div class="mySlides2">
+        <img src="alienheadv6.png" style="width:100%">
+      </div>
+      <div class="mySlides2">
+        <img src="alienheadv2.png" style="width:100%">
+      </div>
+      <div class="mySlides2">
+        <img src="alienheadv3.png" style="width:100%">
+      </div>
+	  <div class="mySlides2">
+        <img src="alienheadv4.png" style="width:100%">
+      </div>
+	<div class="mySlides2">
+        <img src="alienheadv5.png" style="width:100%">
+      </div>
+		<div class="mySlides2">
+        <img src="alienheadv1.png" style="width:100%">
+      </div>
+      <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+    </div>
 	
-<div class="alienbox1">Aliens</div>
-<div class="alienbox2">Description</div>
+    <div class="slideshow-container">
+        <div class="mySlides3">
+          <img src="alienbodyv6.2.png" style="width:100%">
+        </div>
+        <div class="mySlides3">
+          <img src="alienbodyv2.2.png" style="width:100%">
+        </div>
+        <div class="mySlides3">
+          <img src="alienbodyv3.2.png" style="width:100%">
+        </div>
+		 <div class="mySlides3">
+          <img src="alienbodyv4.2.png" style="width:100%">
+        </div>
+		 <div class="mySlides3">
+          <img src="alienbodyv5.2.png" style="width:100%">
+        </div>
+		 <div class="mySlides3">
+          <img src="alienbodyv1_2.png" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+    </div>
+
+    <script>
+    var slideIndex = [1,1,1];
+    var slideId = ["mySlides1", "mySlides2", "mySlides3"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+    showSlides(1, 2);
+
+    function plusSlides(n, no) {
+      showSlides(slideIndex[no] += n, no);
+    }
+
+    function showSlides(n, no) {
+      var i;
+      var x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {slideIndex[no] = 1}    
+      if (n < 2) {slideIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex[no]-1].style.display = "block";  
+    }
+    </script>
 	
-<div class="imagemap"><img src="alien3.png" alt="Space" usemap="#entire" width="1450" height="958" float="center"></div>	
-	
-	
-	
+<div class="returnhomealien"><a href="Index.html"><img src="goldstar.png" width="200px" alt="home star"></a></div>
 	
 </body>
 </html>
